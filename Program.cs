@@ -11,9 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<NZWalkDbContext>(Options=>{
-    Options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalkConnectionString"));
-});
+builder.Services.AddDbContext<NZWalkDbContext>(Options=>
+    Options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalkConnectionString")));
 
 var app = builder.Build();
 
