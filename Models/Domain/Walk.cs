@@ -17,6 +17,9 @@ namespace ctutrainingsolutions.Models.Domain
 
         public string? WalkImageUrl { get; set; }
 
+        public Guid DifficultyId { get; set; }
+        public Guid RegionId { get; set; }
+
         //Navigation properties
 
         public Difficulty Difficulty { get; set; }
