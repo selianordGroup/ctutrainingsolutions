@@ -12,7 +12,7 @@ namespace ctutrainingsolutions.Models.Domain
         public string ParentSurname { get; set; }
         public string Email { get; set; }
         public string CellphoneNumber { get; set; }
-        public string? LearnerImage { get; set; }
+        public string? ParentImage { get; set; }
 
         //Links tables
         public Guid LearnerId { get; set; }
